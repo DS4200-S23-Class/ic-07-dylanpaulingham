@@ -20,7 +20,7 @@ const MAX_Y = d3.max(data3, (d) => { return d; });
 // Scale function
 const Y_SCALE = d3.scaleLinear()
     .domain([0, (MAX_Y + 10000)])
-    .range([0, VIS_HEIGHT]);
+    .range([VIS_HEIGHT, 0]);
 
 FRAME3.selectAll("points")
     .data(data3)
